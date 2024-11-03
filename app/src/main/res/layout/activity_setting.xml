@@ -1,0 +1,42 @@
+<!-- res/layout/activity_setting.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Daily Spending Limit"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_spending_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter spending limit"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_save_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+    <Switch
+        android:id="@+id/switch_auto_record_sms"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto Record from SMS" />
+
+    <Switch
+        android:id="@+id/switch_auto_record_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto Record from Notifications" />
+
+</LinearLayout>
